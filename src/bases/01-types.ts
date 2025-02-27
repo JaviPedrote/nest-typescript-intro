@@ -1,9 +1,9 @@
 
 export let name: string = 'Fernando';
-export const age: number = 35;
+export const age: number = 37;
 export const isValid: boolean = true;
 
-name = 'Melissa';
+name = 'Javier';
 // name = 123;
 // name = true;
 
@@ -18,4 +18,4 @@ números: ${ age }
 booleanos: ${ isValid }
 `
 
-console.log( templateString );
+console.log( templateString.length );

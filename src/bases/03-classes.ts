@@ -22,9 +22,9 @@ export class Pokemon {
         console.log(`${ this.name }, ${ this.name }`);
     }
 
-    async getMoves(): Promise<Move[]> {
-        const { data } = await axios.get<PokeapiReponse>('https://pokeapi.co/api/v2/pokemon/4');
-        console.log( data.moves );
+    async getMoves(id:number): Promise<Move[]> {
+        const { data } = await axios.get<PokeapiReponse>(`https://pokeapi.co/api/v2/pokemon/${id}`);
+        console.log( data );
         
         return data.moves;
     }
